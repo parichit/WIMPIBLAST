@@ -1,0 +1,323 @@
+/* 
+    Document   : primary_template
+    Created on : 1 Aug, 2013, 4:09:07 PM
+    Author     : parichit
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: Arial, Helvetica, Verdana, Sans-serif;
+    font-size: 12px;
+    color: #666666;
+    text-align: center;
+    background: url(/WImpiBLAST/Design/images/cream_dust.png) repeat 0 0;
+
+}
+
+#page-container {
+
+    width: 90%;
+    text-align: left;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 3px;
+    padding: 6px;
+    margin-top: 1%;
+    margin-left: 5%;
+
+}
+
+
+#header {
+    height:110px;
+    background:#50d07d;
+    margin-top: 1%;
+    border: 0px black solid;
+}
+
+#header_style{
+
+}
+
+#header_style h1{
+
+    font-family: 'Molengo', Helvetica, Arial, sans-serif;
+    font-size: 35px;
+    line-height: 20px;
+    font-weight: normal;
+    float: left;
+    color: #0772A1;
+    margin-top:30px;
+    border: 0px black solid;
+    margin-left:2%;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing:antialiased;
+}
+
+#header_style h2 {
+
+    font-family: 'Molengo', Helvetica, Arial, sans-serif;
+    font-size: 22px;
+    line-height: 20px;
+    font-weight: normal;
+    color: #0772A1;
+    border: 0px black solid;    
+    width: fit-content;
+    float: left;
+    position: absolute;
+    margin-top: 20px;
+    margin-left:2.4%;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing:antialiased;
+
+}
+
+#note{
+
+    float: top;
+    border: 0px solid black;
+    font-family: 'Molengo', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    color: #0772A1;
+    margin-left: 1%;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing:antialiased;
+
+}
+
+#content {
+
+    width: 600px;
+    margin-left: 1%;
+    border:0px solid black;
+    margin-top: 3%;
+}
+
+#sidebar-a {
+
+    float: right;
+    width: 300px;
+    line-height: 18px;
+    margin-right:1%; 
+    border: 0px solid black;
+    margin-top: 3%;
+
+
+}
+
+#sidebar-a .padding {
+
+    display: none;
+    float: left;
+
+}
+
+#footer {
+
+    font-family: Tahoma, Arial, Helvetica, Sans-serif;
+    font-size: 10px;
+    color: #c9c9c9;
+    border-top: 1px solid #efefef;
+    padding: 10px 10px;
+    line-height: 18px;
+    background:#0772A1;
+    height: 45px;
+    text-align: left;
+    position:absolute;
+    bottom:0px;
+    width: 98.5%;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing:antialiased;
+
+}
+
+#footer a {
+
+    color: #c9c9c9;
+    text-decoration: none;
+}
+
+#footer a:hover {
+
+    color: #db6d16;
+}
+
+.altnav {
+    clear: both;
+    width: 350px;
+    float: right;
+    text-align: right;
+    margin-top:2%;
+    float:right;
+    position:relative;
+    height: auto;
+    
+}
+
+
+
+.ip_text{
+
+    width:250px;
+    height: 25px;
+    padding: 3px;
+    font-size: 15px;
+
+}
+
+
+h1  {
+
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-size: 35px;
+    line-height: 50px;
+    margin: 0px;
+    padding: 0px;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing:antialiased;
+}
+
+
+h2 {
+
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    line-height: 40px; 
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing:antialiased;
+
+}
+
+
+
+.special_fonts {
+
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 25px;
+    color: #2c2d33;  
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing:antialiased;
+
+}
+
+
+.showlogin{
+
+    position: relative;
+    color: #0772A1;
+    text-decoration: none;
+    background: #50d07d;
+    font-family: 'Molengo', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 20px;
+    display: block;
+    padding: 5px;
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border:0px;
+    border-radius: 0px;
+    -webkit-box-shadow: 0px 5px 0px #0772A1, 0px 5px 5px #0772A1;
+    -moz-box-shadow: 0px 5px 0px #0772A1, 0px 5px 5px #0772A1;
+    box-shadow: 0px 5px 0px #0772A1, 0px 5px 5px #0772A1;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    -webkit-transition: all .1s ease;
+    -moz-transition: all .1s ease;
+    -ms-transition: all .1s ease;
+    -o-transition: all .1s ease;
+    transition: all .1s ease;
+}
+
+.showlogin:active {
+
+    -webkit-box-shadow: 0px 3px 0px #0772A1, 0px 3px 6px #0772A1;
+    -moz-box-shadow: 0px 3px 0px #0772A1, 0px 3px 6px #0772A1;
+    box-shadow: 0px 3px 0px #0772A1, 0px 3px 6px #0772A1;
+    position: relative;
+    top: 6px;
+}
+
+
+.special_fonts_hidden{
+
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 25px;
+    color: #2c2d33; 
+    display: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing:antialiased;
+
+}
+
+.message{
+    font-family: 'Molengo', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    color: #0772A1;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing:antialiased;
+
+}
+
+.content_button{
+
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 15px; 
+    alignment-adjust: central;
+    color: white;
+    border-width: 0px;
+    border-color: white;
+    width:100px; 
+    padding-bottom: 5px;
+    padding-top: 5px;
+    background: #ff7400; /* Old browsers */
+    background: -moz-linear-gradient(top, #ff7400 0%, #ff7400 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff7400), color-stop(100%,#ff7400)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #ff7400 0%,#ff7400 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #ff7400 0%,#ff7400 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #ff7400 0%,#ff7400 100%); /* IE10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7400', endColorstr='#ff7400',GradientType=0 ); /* IE6-9 */
+
+}
+
+
+.demoinfo {
+
+
+    float: right;
+    font-family: 'Molengo', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    color: #0772A1;
+    border: 0px solid black;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing:antialiased;
+
+}
+
+.visits {
+
+    font-family: 'Molengo', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    color: black;
+    background: green;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing:antialiased;
+
+}

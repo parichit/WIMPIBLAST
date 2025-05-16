@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_3.dtd">
+
+
+<struts-config>
+    <form-beans>
+        <form-bean name="UploadForm" type="Utility.UploadForm"/>
+        <form-bean name="DownloadForm" type="Utility.DownloadForm" />
+        <form-bean name="DirectoryTreeForm" type="Directory.DirectoryTreeForm"/>
+        <form-bean name="ManageJobForm" type="JobManagement.ManageJobForm"/>
+        <form-bean name="SubmitJobForm" type="JobManagement.SubmitJobForm"/>
+        <form-bean name="mpiblastFormBean" type="mpiBlast.mpiblastFormBean"/>
+        <form-bean name="ModifyScriptForm" type="JobScript.ModifyScriptForm"/>
+        <form-bean name="CreateScriptForm" type="JobScript.CreateScriptForm"/>
+        <form-bean name="TurboSubmitJobForm" type="JobScript.TurboSubmitJobForm"/>
+        <form-bean name="LoginActionForm" type="login.LoginActionForm"/>
+    </form-beans>
+    
+    <global-exceptions>
+       
+	    <exception
+	      key="error.global.NPmessage"
+	      type="java.lang.NullPointerException"
+	      path="/Errors/NoValueEx.jsp" />
+            <exception
+	      key="error.global.IOmessage"
+	      type="java.io.IOException"
+	      path="/Errors/IOEx.jsp" />
+            <exception
+	      key="error.global.FNFmessage"
+	      type="java.io.FileNotFoundException"
+	      path="/Errors/FileFoundEx.jsp" />
+            <exception
+	      key="error.global.AOBmessage"
+	      type="java.lang.ArrayIndexOutOfBoundsException"
+	      path="/Errors/OutBoundEx.jsp" />
+            <exception
+	      key="error.global.ISmessage"
+	      type="java.lang.IllegalStateException"
+	      path="/Errors/OutBoundEx.jsp" />
+	</global-exceptions>
+        
+          
+     <global-forwards>
+        <forward name="welcome"  path="/Welcome.do"/>
+    </global-forwards>
+
+    <action-mappings>
+        
+        <action name="LoginActionForm" path="/dologin" scope="session" type="login.LoginAction">
+            <forward name="fail" path="/Errors/loginfail.jsp" redirect="true"/>
+            <forward name="success" path="/Home/home.jsp" redirect="true"/>
+            <forward name="param_fail" path="/Errors/log_err.jsp" redirect="true"/>
+            <forward name="config_file_fail" path="/Errors/config_file_err.jsp" redirect="true"/>
+            <forward name="admin_success" path="/administrator/Home/home.jsp" redirect="true"/>
+        </action>
+        
+        <action name="CreateScriptForm" scope="request" path="/create_script" type="JobScript.CreateScriptAction">
+            <forward name="fail" path="/modules/Script_Operations/Create_New_Script.jsp" redirect="true"/>
+            <forward name="success" path="/modules/mpiblast/mpiblast.jsp" redirect="true"/>
+        </action>
+        
+        <action name="ModifyScriptForm" scope="request" path="/modifyscript" type="JobScript.ModifyScriptAction">
+            <forward name="success" path="/modules/Script_Operations/Modify_Older_Script.jsp" redirect="true"/>
+            <forward name="fail" path="/modules/Script_Operations/Modify_Older_Script.jsp" redirect="true"/>
+        </action>
+        
+        <action name="mpiblastFormBean" path="/blastscript" scope="session" type="mpiBlast.mpiblastAction">
+            <forward name="success" path="/modules/Job_Reporting/List_Job.jsp" redirect="true"/>
+            <forward name="fail" path="/modules/mpiblast/mpiblast.jsp" redirect="true"/>
+        </action>
+        
+        <action name="SubmitJobForm" scope="request" path="/submitjob" type="JobManagement.SubmitJobAction">
+            <forward name="fail" path="/modules/Job/Submit_Job.jsp" redirect="true"/>
+            <forward name="success" path="/modules/Job/Submit_Job.jsp" redirect="true"/>
+        </action>
+        
+        <action name="ManageJobForm" path="/managejob" scope="request" type="JobManagement.ManageJobAction">
+            <forward name="fail" path="/modules/Job_Reporting/Manage_Job.jsp" redirect="true"/>
+            <forward name="success" path="/modules/Job_Reporting/Manage_Job.jsp" redirect="true"/>
+        </action>
+        <action name="DownloadForm" path="/normaldownload" scope="request" type="Utility.DownloadAction">
+            <forward name="success" path="/modules/Utility/Downres.jsp" redirect="true"/>
+            <forward name="fail" path="/modules/Utility/Downres.jsp" redirect="true"/>
+        </action>
+         <action  name="DirectoryTreeForm" path="/directory" scope="request" type="Directory.DirectoryTreeAction">
+            <forward name="success" path="/modules/Utility/Downres.jsp" />
+            <forward name="error" path="/Errors/DirNavigationError.jsp" />
+            </action>
+            <action name="UploadForm" path="/uploadfile" scope="request" type="Utility.UploadAction">
+            <forward name="success" path="/modules/Utility/Downres.jsp" redirect="true"/>
+            <forward name="fail" path="/modules/Utility/Downres.jsp" redirect="true"/>
+            </action>
+            <action name="TurboSubmitJobForm" path="/turbo_job_submit" scope="request" type="JobScript.TurboSubmitJob">
+            <forward name="success" path="/modules/Job_Reporting/List_Job.jsp" redirect="true"/>
+            <forward name="fail" path="/modules/Script_Operations/goTurbo.jsp" redirect="true"/>
+            </action>
+    </action-mappings>
+    
+    <controller processorClass="org.apache.struts.tiles.TilesRequestProcessor"/>
+    
+    <message-resources parameter="/com/myapp/struts/ApplicationResource"/>    
+    
+    <!-- ========================= Tiles plugin ===============================-->
+    <!--
+    This plugin initialize Tiles definition factory. This later can takes some
+    parameters explained here after. The plugin first read parameters from
+    web.xml, thenoverload them with parameters defined here. All parameters
+    are optional.
+    The plugin should be declared in each struts-config file.
+    - definitions-config: (optional)
+    Specify configuration file names. There can be several comma
+    separated file names (default: ?? )
+    - moduleAware: (optional - struts1.1)
+    Specify if the Tiles definition factory is module aware. If true
+    (default), there will be one factory for each Struts module.
+    If false, there will be one common factory for all module. In this
+    later case, it is still needed to declare one plugin per module.
+    The factory will be initialized with parameters found in the first
+    initialized plugin (generally the one associated with the default
+    module).
+    true : One factory per module. (default)
+    false : one single shared factory for all modules
+    - definitions-parser-validate: (optional)
+    Specify if xml parser should validate the Tiles configuration file.
+    true : validate. DTD should be specified in file header (default)
+    false : no validation
+
+    Paths found in Tiles definitions are relative to the main context.
+    -->
+    
+    
+    <plug-in className="org.apache.struts.tiles.TilesPlugin" >
+        <set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml" />      
+        <set-property property="moduleAware" value="true" />
+    </plug-in>
+ 
+    <!-- ========================= Validator plugin ================================= -->
+    <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+        <set-property
+            property="pathnames"
+            value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml"/>
+        
+    </plug-in>
+  
+</struts-config>

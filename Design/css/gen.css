@@ -1,0 +1,192 @@
+/* 
+    Document   : primary_template
+    Created on : 1 Aug, 2013, 4:09:07 PM
+    Author     : parichit
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    font-family: Arial, Helvetica, Verdana, Sans-serif;
+    font-size: 12px;
+    color: #666666;
+    text-align: center;
+    background: url(/WImpiBLAST/Design/images/cream_dust.png) repeat 0 0;
+    height: auto;
+    overflow: auto;
+
+}
+
+#page-container {
+
+    width: 90%;
+    text-align: left;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 3px;
+    padding: 0px;
+    margin-top: 1%;
+    margin-left: 2%;
+    border:0px solid black;
+    height: auto;
+
+}
+
+
+#header {
+
+    height:100px;
+    background:#50d07d;
+    margin-top: 1%;
+
+}
+
+#header_style{
+
+}
+
+#header_style h1{
+
+    font-family: 'Molengo', Helvetica, Arial, sans-serif;
+    font-size: 35px;
+    line-height: 20px;
+    font-weight: normal;
+    float: left;
+    color: #0772A1;
+    margin-top:30px;
+    border: 0px black solid;
+    margin-left:2%;
+    padding: 0px;
+    
+   
+}
+
+#header_style h2 {
+
+    font-family: 'Molengo', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: normal;
+    color: #0772A1;
+    border: 0px black solid;  
+    position: absolute;
+    width: fit-content;
+    float: left;
+    margin-left:2.4%;
+    padding: 0px;
+    margin-top: 60px;
+}
+
+
+
+
+#content {
+
+    margin-right: 0;
+    width: 100%;
+    margin-left: 0;
+    border:0px solid black;
+    height: auto;
+
+}
+
+
+
+#footer {
+    
+    clear: both;
+    font-family: Tahoma, Arial, Helvetica, Sans-serif;
+    font-size: 10px;
+    color: #c9c9c9;
+    border-top: 1px solid #efefef;
+    padding: 10px 10px;
+    line-height: 18px;
+    background:#0772A1;
+    height: 45px;
+    text-align: left;
+    position: absolute;
+    bottom: 0px;
+    width: 98.5%;
+
+}
+
+#footer a {
+
+    color: #c9c9c9;
+    text-decoration: none;
+}
+
+#footer a:hover {
+
+    color: #db6d16;
+}
+
+#footer #altnav {
+    clear: both;
+    width: 350px;
+    float: right;
+    text-align: right;
+    padding-top: 13px;
+}
+
+
+
+
+h1  {
+
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    line-height: 30px;
+    border: 0px solid black;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+h2 {
+
+    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-size: 30px;
+    line-height: 40px; 
+
+}
+
+.special_fonts {
+
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 25px;
+    color: #2c2d33;  
+
+}
+
+
+.special_fonts_hidden{
+
+    font-family: 'PT Sans', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 25px;
+    color: #2c2d33; 
+    display: none;
+
+}
+
+.message{
+    
+ font-family: 'Molengo', Helvetica, Arial, sans-serif;
+ font-size: 20px;
+ line-height: 22px;
+ color: #0772A1;
+  
+}
+
+

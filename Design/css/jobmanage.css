@@ -1,0 +1,275 @@
+/* 
+    Document   : Script-Operations-Style
+    Created on : 2 Aug, 2013, 12:33:51 PM
+    Author     : parichit
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    
+    font-family: Arial, Helvetica, Verdana, Sans-serif;
+    font-size: 12px;
+    color: #666666;
+    text-align: center;
+    padding-top: 3%;
+    background: url(/WImpiBLAST/Design/images/cream_dust.png) repeat 0 0;
+
+}
+
+#page-container {
+    
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    border-style: solid;
+    border-color: #04859D;
+    border-width: 0px;
+    border-radius: 0px;
+    padding: 0px;
+    margin-bottom: 30px;
+    background: white;
+    -moz-box-shadow: -3px 3px 10px  #999;
+    -webkit-box-shadow: -3px 3px 10px #999;
+    box-shadow: -3px 3px 10px #999;
+}
+
+hr {
+
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+#main-nav {
+    
+    height: 30px;
+}
+
+#header {
+   
+    height:130px;
+    background: #ABDCD6;
+    
+}
+
+#header_style{
+ 
+}
+
+#header_style h1{
+
+    font-family: 'Molengo', Helvetica, Arial, sans-serif;
+    font-size: 35px;
+    line-height: 20px;
+    font-weight: normal;
+    float: left;
+    color: #0772A1;
+    margin-top:50px;
+    border: 0px black solid;
+    margin-left:2%;
+    padding: 0px;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing:antialiased;
+}
+
+#header_style h2 {
+
+    font-family: 'Molengo', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: normal;
+    color: #0772A1;
+    border: 0px black solid;  
+    position: absolute;
+    width: fit-content;
+    float: left;
+    margin-left:2.0%;
+    padding: 0px;
+    margin-top: 80px;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing:antialiased;
+}
+
+#content {
+    
+    margin-right: 280px;
+    width: 80%;
+}
+
+#content p {
+    
+    margin: 0;
+    padding: 0;
+    line-height: 18px;
+    font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+#content .padding{
+
+    padding: 10px; 
+    margin-right: 1%;
+    width: auto;
+}
+
+#sidebar-a {
+
+    float: right;
+    width: 20%;
+    line-height: 18px;
+    margin-top: 4%;
+}
+
+#sidebar-a .padding {
+
+    padding: 5px;
+   
+}
+
+#footer {
+
+    clear: both;
+    font-family: Tahoma, Arial, Helvetica, Sans-serif;
+    font-size: 10px;
+    color: #c9c9c9;
+    border-top: 1px solid #efefef;
+    padding: 13px 25px;
+    line-height: 18px;
+
+}
+
+#footer a {
+    color: #c9c9c9;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: #db6d16;
+}
+
+#footer #altnav {
+    clear: both;
+    width: 350px;
+    float: right;
+    text-align: right;
+    padding-top: 13px;
+}
+
+#footer #copyright {
+    padding-top: 13px;
+}
+
+
+.contentjm {
+
+    color:#6082B6;
+    font-weight: normal;
+    font-family: 'Cabin', Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+    width: 600px;
+    color: #0772A1;
+  
+
+}
+
+.contentjmvalue{
+
+    font-family: 'Droid', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+.content_button2{
+
+   font-family: 'Molengo', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 12px; 
+    alignment-adjust: central;
+    color: white;
+    border-width: 1px;
+    width:100px; 
+    padding-bottom: 5px;
+    padding-top:5px;
+    background:  #218559;
+
+}
+
+.showsuccessstatus{
+
+    background:#3EB489;  
+    border: 0px solid black;
+    height: 30px;
+    margin-top: 10px;
+    padding-bottom: 0px;
+    border-radius: 0px;
+    display: none;
+
+}
+
+.showerrorstatus{
+
+    background:#FF8C69;  
+    border: 0px solid black;
+    height: auto;
+    margin-top: 10px;
+    padding-bottom: 0px;
+    border-radius: 0px;  
+    display: none;
+
+}
+
+
+.showsuccessstatus p{
+
+    font-family: 'Droid', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    color: #0772A1; 
+    font-weight: bold;
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+}
+
+.showerrorstatus p{
+    font-family: 'Droid', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    color: #0772A1; 
+    font-weight:700;   
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+}
+#hint{
+    
+    
+    display:none;
+    border: 1px solid black;
+    background: #218559;
+    position:absolute;
+    z-index: 2;
+    font-family: 'Molengo', Helvetica, Arial, sans-serif;
+    font-size:15px;
+    color: white;
+    background: black;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+}

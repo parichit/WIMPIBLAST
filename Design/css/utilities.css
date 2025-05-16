@@ -1,0 +1,406 @@
+/* 
+    Document   : Script-Operations-Style
+    Created on : 2 Aug, 2013, 12:33:51 PM
+    Author     : parichit
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    font-family: Arial, Helvetica, Verdana, Sans-serif;
+    font-size: 12px;
+    color: #666666;
+    text-align: center;
+    padding-top: 3%;
+    background: url(/WImpiBLAST/Design/images/cream_dust.png) repeat 0 0;
+
+}
+
+#page-container {
+    width: 70%;
+    margin-left: 1%;
+    float: left;
+    text-align: left;
+    border-style: solid;
+    border-color: #04859D;
+    border-width: 0px;
+    border-radius: 0px;
+    padding: 0px;
+    margin-bottom: 30px;
+    background: white;
+    -moz-box-shadow: -3px 3px 10px  #999;
+    -webkit-box-shadow: -3px 3px 10px #999;
+    box-shadow: -3px 3px 10px #999;
+}
+
+#help_menu {
+
+    width: 26%;
+    float: right;
+    margin-right: 1%;
+    text-align: left;
+    border: 5px solid #8C92AC;
+    border-radius: 0px;
+    padding: 0px;
+    margin-bottom: 30px;
+    background: white;
+    -moz-box-shadow: -3px 3px 10px  #999;
+    -webkit-box-shadow: -3px 3px 10px #999;
+    box-shadow: -3px 3px 10px #999;  
+    height:auto;
+}
+
+#main-nav {
+    height: 50px;
+}
+
+#header {
+    height:130px;
+    background: #ABDCD6;
+}
+
+#header_style{
+
+}
+
+#header_style h1{
+
+    font-family: 'Molengo', Helvetica, Arial, sans-serif;
+    font-size: 35px;
+    line-height: 20px;
+    font-weight: normal;
+    float: left;
+    color: #0772A1;
+    margin-top:50px;
+    border: 0px black solid;
+    margin-left:2%;
+    padding: 0px;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing:antialiased;
+}
+
+#header_style h2 {
+
+    font-family: 'Molengo', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: normal;
+    color: #0772A1;
+    border: 0px black solid;  
+    position: absolute;
+    width: fit-content;
+    float: left;
+    margin-left:1.8%;
+    padding: 0px;
+    margin-top: 80px;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing:antialiased;
+}
+
+
+#content {
+    margin-right: 2%;
+    width: 420px;
+    margin-left: 2%;
+    border:0px solid black;
+
+}
+
+
+#content p {
+    margin: 0;
+    padding: 0;
+    line-height: 18px;
+    font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+#content .padding{
+
+    padding-left: 5px;
+    display: none;
+    border:0px solid black;
+}
+
+#sidebar-a {
+
+    float: right;
+    margin-top: 30px;
+    width: 450px;
+    line-height: 18px;
+    height: auto;
+    border:0px solid black;
+
+}
+
+
+#footer {
+
+    clear: both;
+    font-family: Tahoma, Arial, Helvetica, Sans-serif;
+    font-size: 10px;
+    color: #c9c9c9;
+    border-top: 1px solid #efefef;
+    padding: 13px 25px;
+    line-height: 18px;
+
+}
+
+#footer a {
+    color: #c9c9c9;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: #db6d16;
+}
+
+#footer #altnav {
+    clear: both;
+    width: 350px;
+    float: right;
+    text-align: right;
+    padding-top: 13px;
+}
+
+#footer #copyright {
+    padding-top: 13px;
+}
+
+.contentdnld {
+
+    color:#6082B6;
+    font-weight: normal;
+    font-family: 'Cabin', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    padding-left: 0px;
+    padding-top: 2px;
+    padding-bottom: 10px;
+    width: 300px;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing:antialiased;
+}
+
+
+.content_button2{
+
+    font-family: 'Molengo', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 12px; 
+    alignment-adjust: central;
+    color: white;
+    border-width: 1px;
+    width:100px; 
+    padding-bottom: 5px;
+    padding-top:5px;
+    background:  #218559;
+
+}
+
+.showemptyfields{
+
+    background:#FF8C69;  
+    border: 0px solid black;
+    height: auto;
+    margin-top: 30px;
+    padding-bottom: 0px;
+    border-radius: 0px; 
+    display:none;
+}
+
+.showemptyfields p{
+
+    font-family: 'Droid', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #0772A1; 
+    font-weight:700;   
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+
+}
+
+.showsuccessstatus{
+
+    background:#3EB489;  
+    border: 0px solid black;
+    height: 30px;
+    margin-top: 10px;
+    padding-bottom: 0px;
+    border-radius: 0px;
+    display: none;
+
+}
+
+.showerrorstatus{
+
+    background:#FF8C69;  
+    border: 0px solid black;
+    height: auto;
+    margin-top: 10px;
+    padding-bottom: 0px;
+    border-radius: 0px;   
+    display: none;
+
+}
+
+
+.showsuccessstatus p{
+
+    font-family: 'Droid', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    color: #0772A1; 
+    font-weight: bold;
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+}
+
+.showerrorstatus p{
+    font-family: 'Droid', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    color: #0772A1; 
+    font-weight: bold;   
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+}
+
+.showload{
+
+    display: none;
+    background: #BF94E4;
+    z-index: 104;
+    font-family: 'Molengo', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 12px; 
+    position: relative;
+    z-index: 2;
+
+}
+
+.information {
+
+    font-family: sans-serif;
+    font-weight: bold;
+    color:#6082B6; 
+    font-size: 13px;
+    padding :0 2% 0 2%
+
+}
+
+.helpinfo {
+
+    font-family: sans-serif;
+    font-weight: 500;
+    color:#6082B6; 
+    font-size: 13px; 
+    line-height: 20px;
+    display:none;
+    text-align:left;
+    padding-left: 3%;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    
+}
+
+.contentdnld:hover {
+
+    cursor: pointer;
+}
+
+.content:hover {
+
+    cursor: pointer;
+
+}
+
+.text {
+
+
+    width:210px;
+    height:25px;
+    font-family: 'Molengo', Helvetica, Arial, sans-serif;
+    font-size:15px;
+}
+
+.load{
+
+    display:none;
+    position:relative;
+
+}
+
+.fade{
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index:1001;
+    -moz-opacity: 0.7;
+    opacity:.70;
+    filter: alpha(opacity=70);
+}
+
+.light{
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    width: 0px;
+    height: 0px;
+    border: 0px solid #FFF;
+    background: black;
+    z-index:1002;
+
+}
+
+.ani{
+
+    font-family: 'Droid', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    width: 300px;  
+    color: white;
+    padding-top: 80px;
+    display:none;
+}
+
+.ani1{
+
+    font-family: 'Droid', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    width: 300px;  
+    color: white;
+    padding-top: 80px;
+    display:none;
+}
+
+#hint{
+
+    display:none;
+    border: 1px solid black;
+    background: #218559;
+    position:absolute;
+    z-index: 2;
+    font-family: 'Molengo', Helvetica, Arial, sans-serif;
+    font-size:15px;
+    color: white;
+    background: black;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+

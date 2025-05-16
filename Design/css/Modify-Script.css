@@ -1,0 +1,524 @@
+/* 
+    Document   : Script-Operations-Style
+    Created on : 2 Aug, 2013, 12:33:51 PM
+    Author     : parichit
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+    font-family: Arial, Helvetica, Verdana, Sans-serif;
+    font-size: 12px;
+    color: #666666;
+    text-align: center;
+    padding-top: 3%;
+    background: url(/WImpiBLAST/Design/images/cream_dust.png) repeat 0 0;
+
+}
+
+#page{
+
+    display:none;
+}
+
+#page-container {
+    width: 68%;
+    float: left;
+    margin-left: 1%;
+    text-align: left;
+    border-style: solid;
+    border-color: #04859D;
+    border-width: 0px;
+    border-radius: 0px;
+    padding: 0px;
+    margin-bottom: 30px;
+    background: white;
+    -moz-box-shadow: -3px 3px 10px  #999;
+    -webkit-box-shadow: -3px 3px 10px #999;
+    box-shadow: -3px 3px 10px #999;
+}
+
+#help_menu {
+
+    width: 28%;
+    float: right;
+    margin-right: 1%;
+    text-align: left;
+    border: 5px solid #8C92AC;
+    border-radius: 0px;
+    padding: 0px;
+    margin-bottom: 30px;
+    background: white;
+    -moz-box-shadow: -3px 3px 10px  #999;
+    -webkit-box-shadow: -3px 3px 10px #999;
+    box-shadow: -3px 3px 10px #999;  
+    height:auto;
+}
+
+
+hr {
+
+    border: 0;
+    height: 2px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+}
+
+#main-nav {
+    height: 50px;
+}
+
+#header {
+    height:130px;
+    background: #ABDCD6;
+}
+
+#header_style{
+
+}
+
+#header_style h1{
+
+    font-family: 'Molengo', Helvetica, Arial, sans-serif;
+    font-size: 35px;
+    line-height: 20px;
+    font-weight: normal;
+    float: left;
+    color: #0772A1;
+    margin-top:50px;
+    border: 0px black solid;
+    margin-left:2%;
+    padding: 0px;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing:antialiased;
+   
+}
+
+#header_style h2 {
+
+    font-family: 'Molengo', Helvetica, Arial, sans-serif;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: normal;
+    color: #0772A1;
+    border: 0px black solid;  
+    position: absolute;
+    width: fit-content;
+    float: left;
+    margin-left:1.8%;
+    padding: 0px;
+    margin-top: 80px;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing:antialiased;
+}
+
+#content {
+    margin-right: 280px;
+    width: 100%;
+}
+
+
+
+#content h2 {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 15px;
+}
+
+#content p {
+    margin: 0;
+    padding: 0;
+    line-height: 18px;
+    font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+#content .padding{
+
+    padding: 20px;   
+}
+
+#sidebar-a {
+
+    float: right;
+    width: 200px;
+    line-height: 18px;
+}
+
+#sidebar-a .padding {
+
+    padding-top: 62px;
+    padding-bottom: 30px;
+    padding-left:40px;
+}
+
+#footer {
+
+    clear: both;
+    font-family: Tahoma, Arial, Helvetica, Sans-serif;
+    font-size: 10px;
+    color: #c9c9c9;
+    border-top: 1px solid #efefef;
+    padding: 13px 25px;
+    line-height: 18px;
+
+}
+
+#footer a {
+    color: #c9c9c9;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: #db6d16;
+}
+
+#footer #altnav {
+    clear: both;
+    width: 350px;
+    float: right;
+    text-align: right;
+    padding-top: 13px;
+}
+
+#footer #copyright {
+    padding-top: 13px;
+}
+
+
+.content {
+
+    color:#6082B6;
+    font-weight: normal;
+    font-family: 'Cabin', Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 148px;
+    margin-right: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing:antialiased;
+
+}
+
+.contentjm {
+
+    font-family: 'Droid', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 11px;
+    padding-left: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 5px;
+    width: 600px;
+
+
+}
+
+.content_button{
+
+    font-family: 'Droid', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 12px; 
+    alignment-adjust: central;
+    color: white;
+    border-radius: 5px;
+    border-width: 1px;
+    width:120px; 
+    padding-bottom: 5px;
+    padding-top:5px;
+    background: #4c4e5a;
+    background: -webkit-linear-gradient(top, #4c4e5a 0%,#2c2d33 100%);
+    background: -moz-linear-gradient(top, #4c4e5a 0%,#2c2d33 100%);
+    background: -o-linear-gradient(top, #4c4e5a 0%,#2c2d33 100%);
+    background: -ms-linear-gradient(top, #4c4e5a 0%,#2c2d33 100%);
+    background: linear-gradient(top, #4c4e5a 0%,#2c2d33 100%);
+
+}
+
+.content_button2{
+
+    font-family: 'Molengo', Helvetica, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 12px; 
+    alignment-adjust: central;
+    color: white;
+    border-width: 1px;
+    width:100px; 
+    padding-bottom: 5px;
+    padding-top:5px;
+    background:  #218559;
+}
+
+.content_area{
+
+    border-width: 3px;   
+    border-radius: 5px;
+    border-color: blanchedalmond;
+    margin-left: 80px;
+    padding-bottom: 10px;
+}
+
+.content_area1{
+    border-width: 3px;   
+    border-radius: 5px;
+    border-color: blanchedalmond;
+    overflow: scroll;
+    padding: 0px;
+    font-family: 'Droid Sans', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+}
+
+
+.hidden_details{
+
+    display:none;
+    float: left;
+  
+}
+
+
+.adjust{
+
+   margin-left: 5%;
+
+}
+
+.showsuccessstatus{
+
+    background:#3EB489;  
+    border: 0px solid black;
+    height: 30px;
+    margin-top: 10px;
+    padding-bottom: 0px;
+    border-radius: 0px;
+    display: none;
+
+}
+
+.showerrorstatus{
+
+    background:#FF8C69;  
+    border: 0px solid black;
+    height: auto;
+    margin-top: 10px;
+    padding-bottom: 0px;
+    border-radius: 0px;   
+    display: none;
+
+}
+
+
+.showsuccessstatus p{
+
+    font-family: 'Droid', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    color: #0772A1; 
+    font-weight: bold;
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+}
+
+.showerrorstatus p{
+    font-family: 'Droid', Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    color: #0772A1; 
+    font-weight: bold;   
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+}
+
+.showemptyfields{
+
+    background:#FF8C69;  
+    border: 0px solid black;
+    height: auto;
+    margin-top: 30px;
+    padding-bottom: 0px;
+    border-radius: 0px; 
+    display:none;
+
+}
+
+.showemptyfields p{
+
+    font-family: 'Droid', Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #0772A1; 
+    font-weight:700;   
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+
+}
+
+.reqfield{
+
+    display:none;
+    float: inside;
+    height: auto;
+
+}
+
+.reqfield p{
+
+    font-family: 'Droid', Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    color: #0772A1; 
+    font-weight:600;   
+
+}
+
+
+.circle {
+
+    background-color: rgba(0,0,0,0);
+    border: 5px solid rgba(0,183,229,0.9);
+    opacity: .9;
+    border-right: 5px solid rgba(0,0,0,0);
+    border-left: 5px solid rgba(0,0,0,0);
+    border-radius: 70px;
+    box-shadow: 0 0 35px #2187e7;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    -moz-animation: spinPulse 1s infinite ease-in-out;
+    -webkit-animation: spinPulse 1s infinite linear;
+    display:none;
+}
+
+.circle1 {
+    background-color: rgba(0,0,0,0);
+    border: 5px solid rgba(0,183,229,0.9);
+    opacity: .9;
+    border-left: 5px solid rgba(0,0,0,0);
+    border-right: 5px solid rgba(0,0,0,0);
+    border-radius: 70px;
+    box-shadow: 0 0 15px #2187e7;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    position: relative;
+    top: -50px;
+    -moz-animation: spinoffPulse 1s infinite linear;
+    -webkit-animation: spinoffPulse 1s infinite linear;
+    display:none;
+
+}
+
+.load{
+
+    display:none;
+    position:relative;
+
+}
+
+.fade{
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index:1001;
+    -moz-opacity: 0.7;
+    opacity:.70;
+    filter: alpha(opacity=70);
+}
+
+.light{
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 45%;
+    width: 0px;
+    height: 0px;
+    border: 0px solid #FFF;
+    background: black;
+    z-index:1002;
+
+}
+
+.ani{
+
+    font-family: 'Droid', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    width: 300px;  
+    color: white;
+    padding-top: 80px;
+    display:none;
+}
+
+.information {
+
+    font-family: sans-serif;
+    font-weight: bold;
+    color:#6082B6; 
+    font-size: 13px;
+    padding :0 2% 0 2%
+
+}
+
+.helpinfo {
+
+    font-family: sans-serif;
+    font-weight: 500;
+    color:#6082B6; 
+    font-size: 14px; 
+    line-height: 20px;
+    display:none;
+    text-align:left;
+    padding-left: 3%;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    
+}
+
+.content:hover {
+    
+    cursor: pointer;
+    
+}
+
+.text {
+
+
+    width:210px;
+    height:25px;
+    font-family: 'Molengo', Helvetica, Arial, sans-serif;
+    font-size:15px;
+}
+
+#hint{
+
+    display:none;
+    border: 1px solid black;
+    background: #218559;
+    position:absolute;
+    z-index: 2;
+    font-family: 'Molengo', Helvetica, Arial, sans-serif;
+    font-size:15px;
+    color: white;
+    background: black;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 5px;
+}
