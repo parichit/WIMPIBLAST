@@ -9,7 +9,7 @@ WImpiBLAST is a user-friendly web interface that helps biologists perform large-
 
 This work addresses a critical bottleneck in modern genomics research. With next-generation sequencing technologies generating massive amounts of data, traditional sequence similarity searches can take days to complete on standard computers. The function of a newly sequenced gene can be discovered by determining its sequence homology with known proteins. BLAST is the most extensively used sequence analysis program for sequence similarity search in large databases of sequences.
 
-WImpiBLAST dramatically reduces this analysis time by making HPC resources accessible to biologists. The use cases presented in the paper demonstrate remarkable performance improvements - in some instances achieving up to 1,000 times faster results compared to standard BLAST searches. 
+WImpiBLAST dramatically reduces this analysis time by making HPC resources accessible to biologists. The use cases presented in the paper demonstrate remarkable performance improvements - in some instances achieving up to 23 times faster results compared to standard BLAST searches. 
 
 
 <div align="center">
